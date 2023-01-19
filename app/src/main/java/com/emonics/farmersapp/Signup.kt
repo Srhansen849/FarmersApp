@@ -31,12 +31,12 @@ class Signup : AppCompatActivity() {
 
         if(firstName.isNotEmpty() && lastName.isNotEmpty()  && userName.isNotEmpty() && emailAddress.isNotEmpty() && password.isNotEmpty() && cpassword.isNotEmpty() ) {
             if(password == cpassword){
-                val user = Users(
+                val newuser = Users(
                     null, firstName, lastName, emailAddress, password, cpassword, null, null
                 )
                 GlobalScope.launch(Dispatchers.IO) {
 
-                    userDb.userApi().insert(Users)
+                    userDb.userApi().insert(newuser)
                 }
 
                 binding.etFName.text.clear()
@@ -46,10 +46,10 @@ class Signup : AppCompatActivity() {
                 binding.etPassword.text.clear()
                 binding.etCpassword.text.clear()
 
-                Toast.makeText(this@Signup,"Successfully written",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Signup,"Success",Toast.LENGTH_SHORT).show()
             }else Toast.makeText(this@Signup,"Passwords did not match",Toast.LENGTH_SHORT).show()
 
-        }else Toast.makeText(this@Signup,"PLease Enter Data",Toast.LENGTH_SHORT).show()
+        }else Toast.makeText(this@Signup,"Please Enter personal data",Toast.LENGTH_SHORT).show()
 
     }
 
