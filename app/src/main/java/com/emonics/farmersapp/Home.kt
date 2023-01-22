@@ -9,9 +9,11 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class Home : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
         // get reference to textview
         // val sign_in= findViewById(R.id.Sign_in)
 
@@ -19,7 +21,7 @@ class Home : AppCompatActivity() {
         // crating on click listener for the textview
         // set on-click listener
         signin.setOnClickListener {
-            val Intent= Intent(this,Home:: class.java )
+            val Intent= Intent(this,registration :: class.java )
             startActivity(Intent)
         }
         // for the items
@@ -29,5 +31,10 @@ class Home : AppCompatActivity() {
             val Intent= Intent(this,page1:: class.java )
             startActivity(Intent)
         }
+
+
     }
 }
+
+
+
