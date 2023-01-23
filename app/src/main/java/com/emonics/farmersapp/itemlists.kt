@@ -28,9 +28,9 @@ class itemlists : AppCompatActivity() {
         val imageId = intArrayOf(
             R.drawable.strobary,
             R.drawable.carrot,
-            R.drawable.Banana,
-            R.drawable.Eggplant,
-            R.drawable.Tomato,
+            R.drawable.banana,
+            R.drawable.eggplant,
+            R.drawable.tomato,
             R.drawable.orange
         )
 

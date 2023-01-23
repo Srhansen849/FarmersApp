@@ -19,7 +19,7 @@ class listofitams : AppCompatActivity() {
         binding = ActivityListofitamsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val imageId = intent.getIntExtra("imageId",R.drawable.Banana)
+        val imageId = intent.getIntExtra("imageId",R.drawable.orange)
         val name = intent.getStringExtra("name")
         val description = intent.getStringExtra("description")
 

@@ -12,7 +12,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginStart="20dp"
-        android:src="@drawable/Banana"/>
+        android:src="@drawable/orange"/>
     <TextView
         android:id="@+id/nameinfo"
         android:layout_width="wrap_content"
