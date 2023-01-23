@@ -13,7 +13,7 @@ class itemlists : AppCompatActivity() {
 
 
     // declaring for the array list
-    private lateinit var itemArrayList: ArrayList<items>
+    private lateinit var itemArrayList: ArrayList<dataitems>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,7 +63,7 @@ class itemlists : AppCompatActivity() {
         // and add or the data in the array list
         for (i in name.indices) {
 
-            val item = items(name[i], description[i], imageId[i])
+            val item = dataitems(name[i], description[i], imageId[i])
             itemArrayList.add(item)
         }
 
