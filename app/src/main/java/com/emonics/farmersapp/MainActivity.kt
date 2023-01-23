@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             "Banana",
             "Dragonfruit",
             "Grapes",
-            "Kiwi"
+            "Kiwi",
             "Mango"
         )
 
