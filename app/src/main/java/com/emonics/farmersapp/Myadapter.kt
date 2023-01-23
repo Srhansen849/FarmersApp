@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class Myadapter (private val context: Activity, private val arrayList:ArrayList<items>):ArrayAdapter<items>(context,R.layout.list_item,arrayList){
+class Myadapter (private val context: Activity, private val arrayList:ArrayList<dataitems>):ArrayAdapter<dataitems>(context,R.layout.list_item,arrayList){
 
     //method overwrite
 
