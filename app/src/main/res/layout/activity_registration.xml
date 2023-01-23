@@ -4,6 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
+    tools:context=".registration">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="408dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+=======
     tools:context=".RegistrationActivity"
     android:background="@color/white"
     android:layout_margin="10dp"
@@ -121,4 +133,5 @@
         app:layout_constraintEnd_toEndOf="@+id/sign_up"/>
 
 
+>>>>>>> origin/Bhavya
 </androidx.constraintlayout.widget.ConstraintLayout>
