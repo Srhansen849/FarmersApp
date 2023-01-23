@@ -27,8 +27,8 @@ class Home : AppCompatActivity() {
         // for the items
         val freshfood= findViewById (R.id.fresh_food)as ImageView
         // set on-click listener
-        signin.setOnClickListener {
-            val Intent= Intent(this,page1:: class.java )
+        freshfood.setOnClickListener {
+            val Intent= Intent(this,itemlists:: class.java )
             startActivity(Intent)
         }
 
