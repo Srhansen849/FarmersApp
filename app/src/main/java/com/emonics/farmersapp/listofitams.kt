@@ -13,12 +13,13 @@ class listofitams : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_listofitams)
-        //setContentView(R.layout.activity_itemlists)
-//binding
+       setContentView(R.layout.activity_listofitams)
+
+//binding UI component with the data source
         binding = ActivityListofitamsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // getting the data that has been pas form the other activity which is itemlists
         val imageId = intent.getIntExtra("imageId",R.drawable.orange)
         val name = intent.getStringExtra("name")
         val description = intent.getStringExtra("description")
