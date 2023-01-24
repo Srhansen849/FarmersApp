@@ -12,19 +12,19 @@ class itemlists : AppCompatActivity() {
     private lateinit var binding: ActivityItemlistfirstpageBinding
 
 
-    // declaring for the array list
-    private lateinit var itemArrayList: ArrayList<items>
+    // declaring reference variable  for the array list
+    private lateinit var itemArrayList: ArrayList<dataitems>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_itemlists)
-//binding
+//binding UI component with the data source
         binding = ActivityItemlistfirstpageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // crating an arrya which contatins the data
 
-        // add the images
+        // creating array , add the images
         val imageId = intArrayOf(
             R.drawable.strobary,
             R.drawable.carrot,
@@ -57,17 +57,18 @@ class itemlists : AppCompatActivity() {
 
         )
         //initialize the array list
+
         itemArrayList = ArrayList()
 
         // loop for to store our data in the array using an object
-        // and add or the data in the array list
+        // and add all the data in the array list
         for (i in name.indices) {
 
-            val item = items(name[i], description[i], imageId[i])
+            val item = dataitems(name[i], description[i], imageId[i])
             itemArrayList.add(item)
         }
 
-        //click listener
+        //click listener for the items
 
 
         binding.listview.isClickable = true
@@ -75,7 +76,7 @@ class itemlists : AppCompatActivity() {
         // setting the adapter
         binding.listview.adapter = Myadapter(this, itemArrayList)
 
-        // seting on item click listener which delers in the top for  item on click
+        // seting on item click listener for  item on click
 
         binding.listview.setOnItemClickListener { parent, view, position, id ->
 
@@ -85,7 +86,7 @@ class itemlists : AppCompatActivity() {
             val name = name[position]
             val description = description[position]
 
-            // sending the data for the next activity
+            // sending the data for the next activity Listofitems
             val i = Intent(this, listofitams::class.java)
 
             //sending the data for the next actvity using putextra method
