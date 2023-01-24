@@ -18,7 +18,7 @@ class Myadapter (private val context: Activity, private val arrayList:ArrayList<
         val inflater:LayoutInflater = LayoutInflater.from(context)
         val view :View =inflater.inflate(R.layout.list_item,null)
 
-        //refer to all items in resource file
+        //refer to all items in resource file(XML file)
 
         val imageView : ImageView =view.findViewById(R.id.fruit_pic)
         val name: TextView = view.findViewById(R.id.fruitName)
