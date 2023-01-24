@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
+
     tools:context=".registration">
 
     <TextView
@@ -15,11 +15,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-=======
-    tools:context=".RegistrationActivity"
-    android:background="@color/white"
-    android:layout_margin="10dp"
-    >
     <ImageView
         android:id="@+id/login_image"
         android:layout_width="match_parent"
@@ -133,5 +128,4 @@
         app:layout_constraintEnd_toEndOf="@+id/sign_up"/>
 
 
->>>>>>> origin/Bhavya
 </androidx.constraintlayout.widget.ConstraintLayout>
